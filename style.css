@@ -1,0 +1,31 @@
+body {
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+
+#chart-title {
+    color: black;
+}
+
+#title{
+    font-size: 40px;
+    font-style: bold; 
+	padding: 30px 30px;
+	background-color: #F7F7F7;
+}
+
+#good-content {
+    padding: 30px 30px;
+}
+
+#bad-content {
+    padding: 30px 30px;
+}
+
+img {
+    padding: 15px 15px;
+}
+
+
+
+
