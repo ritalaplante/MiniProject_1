@@ -100,7 +100,8 @@
                 <span style="font-weight: bold; font-size: 20">Channels:</span>
                 <p>
                     The chart encodes three categories of water using the color channel. Each category of water is assigned a different 
-                    shade of blue. The chart also uses the shape channel to mark 5 year increments along the chart. 
+                    shade of blue. The chart also uses the shape channel to mark 5 year increments along the chart. Additionally the chart uses 
+                    poition channels. The x poition records the year (time) while the y position records renewable water per capita.
                 </p>
             </div>
             <div class = "column column-50">
@@ -199,5 +200,371 @@
         <h1><b>Bad Visualizations</b></h1>
     </div>
 
-    <div class = "container" id = "bad-content"></div>
+    <div class = "container" id = "bad-content">
+        
+        <!-- Bad Visualization 1-->
+        <div class = "row">
+            <div class = "column column-50">
+                <h2><b>Confirmed Coronavirus Cases in Florida</b></h2> <br>
+                <img src="img/bad_covid.png" alt="bad_covid"> 
+                <span style="font-weight: bold; font-size: 20">Marks:</span>
+                <p>
+                    The rectangle mark is used to encode the number of covid cases. The length of each bar encodes the number
+                    of COVID-19 cases
+                </p>
+                <span style="font-weight: bold; font-size: 20">Channels:</span>
+                <p>
+                    The chart uses color to differentiate between dates. Additionally the chart uses poition channels.
+                    The x poition records the date while the y position records the number of COVID-19 cases.
+                </p>
+            </div>
+            <div class = "column column-50">
+                <p id = "audience">
+                    <span style="font-weight: bold; font-size: 20">Audience</span> <br> <br>
+                    The intended audience for the above visualization is the Florida population, as well as the general public 
+                    across the world who are interested in seeing how the number of COVID-19 cases has changed over time in different 
+                    places.
+                </p>
+                <p id = "data">
+                    <span style="font-weight: bold">What data is encoded in the visualization?</span> <br> <br>
+                    The visualization encodes the number of confirmed COVID-19 cases in Florida across a time period of five days.  <br> <br>
+                    
+                    When viewing this chart, individuals are intended to gather information about covid case rates in Florida and 
+                    recognize case rate trends over time. 
+                </p>
+                <p id = "bad-viz">
+                    <span style="font-weight: bold">What makes this visualization bad?</span> <br> <br>
+                    This visualization is bad because it is <b><em>untruthful</em></b>. As we can see the height of the bars is not 
+                    correlated with the actual values above them. The highest value, 4,049 is written above the bar with the smallest value. 
+                    In addition, the visualization also only includes data across the timespan of five days. Adding a wider range of values 
+                    that cover a larger time period would make the visualization more effective at displaying the change in Coronavirus cases 
+                    in Florida. Adding more data points would add more context to the chart making it easier to see the impact COVID-19 has 
+                    had on the population of Florida. This visualization also does not have a visible x or y axis. In this case one can 
+                    assume that the numbers on the bottom correlate to a given date, but it is not explicitly stated. The absence of the x 
+                    axis also made it easier to mislead the audience by not using a scale to make the difference between the different 
+                    values visible. The visualization is misleading because it appears that the lowest number of cases occurred on 6/19, 
+                    which actually has the highest value. In general, the lack of context and scaling leads the visualization to lack 
+                    <b><em>functionality</em></b> and its misleading nature means the visualization lacks meaningful <b><em>insight</em></b>. 
+                </p>
+                <p id = "viz-link">
+                    <a href="https://www.vislies.org/2020/gallery/">
+                        Find this visulation here
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "column">
+                <button type="button" class="collapsible">Our First Redesign</button>
+                <div class = "content">
+                    <img src="redesigns/covid_redesign1.png">
+                    <span style="font-weight: bold; font-size: 20">Marks:</span>
+                    <p>
+                        This redesign uses the bar mark to encode the number of COVID-19 cases.
+                    </p>
+                    <span style="font-weight: bold; font-size: 20">Channels:</span>
+                    <p>
+                        The redesign uses poition channels. The x poition records the date while the y position records the number of COVID-19 cases in the 
+                        thousands. The color channel is also used to highlight elements in this chart when they are selected.
+                    </p>
+                    <p>
+                        We believe this is the best redesign because it displays the data in context and the largest values correspond to the highest bar heights.
+                        Additionally, the inclusion of x and y axes as well as an interactive tooltip that displays the date and number of COVID-19 cases makes
+                        it easier for the viewer to quickly access the exact number of COVID-19 cases recorded on a single day. The original visualization did not 
+                        show COVID-19 cases in context, so it was difficult for the viewer to understand the severity of the outbreak. Now viewers can recognize the 
+                        spike in COVID-19 cases and draw conclusions about trends over time. This addition makes the visualizaiton more <b><em>functional</em></b>
+                        than the original design. Accurate bar heights display higher COVID-19 numbers with taller heights thus making this visualization more
+                        <b><em>truthful</em></b> to the underlying data.
+                    </p>
+                </div>
+            </div>
+            <div class = "column">
+                <button type="button" class="collapsible">Our Second Redesign</button>
+                <div class = "content">
+                    <img src="redesigns/covid_redesign2.png">
+                    <span style="font-weight: bold; font-size: 20">Marks:</span>
+                    <p>
+                        This redesign uses the bar mark to encode the number of COVID-19 cases.
+                    </p>
+                    <span style="font-weight: bold; font-size: 20">Channels:</span>
+                    <p>
+                        The redesign uses poition channels. The x poition records the date while the y position records the number of COVID-19 cases in the 
+                        thousands. The color channel is used to differentiate between different dates.
+                    </p>
+                    <p>
+                        This redesign, like the first redesign, accurately encodes COVID-19 cases in the height of the bar. In this visualization the bar for 
+                        6/19 is the tallest because the most COVID-19 cases (4,049) were observed on that day. The highest height corresponds to the highest 
+                        number of cases making this visualizaiton more <b><em>truthful</em></b> to the underlying data. Labels on the bars
+                        also allow users to quickly identify case numbers without having to refer to the y-axis. Additionally, a more cohesive color scheme
+                        makes this chart more visually appearing adding to its <b><em>beauty</em></b>.
+                    </p>
+                </div>
+            </div>
+            <div class = "column">
+                <button type="button" class="collapsible">Our Third Redesign</button>
+                <div class = "content">
+                    <img src="redesigns/covid_redesign3.png">
+                    <span style="font-weight: bold; font-size: 20">Marks:</span>
+                    <p>
+                        This redesign uses the point and line marks encode the number of COVID-19 cases.
+                    </p>
+                    <span style="font-weight: bold; font-size: 20">Channels:</span>
+                    <p>
+                        The redesign uses poition channels. The x poition records the date while the y position records the number of COVID-19 cases in the 
+                        thousands.
+                    </p>
+                    <p>
+                        Like the first two redesigns, this chart is more <b><em>truthful</em></b> to the underlying data because observations 
+                        of higher recorded COVID-19 cases appear higher on the chart. The addition of labeled axes make the chart easier to read and quickly
+                        understandable. Additionally, the trend line allows viewers to quickly recognize trends in COVID-19 case rates adding to the 
+                        <b><em>functionality</em></b> of this visualization. One drawback of this visualization is that users are not able to precisely identify
+                        COVID-19 case numbers. Instead they can see trends and make rough estimates of case numbers.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Bad Visualization 2-->
+        <div class = "row">
+            <div class = "column column-50">
+                <h2><b>Looking Down on the Rest of the World</b></h2> <br>
+                <img src="img/bad_height.png" alt="bad_height"> 
+                <span style="font-weight: bold; font-size: 20">Marks:</span>
+                <p>
+                    This chart uses the cartoon figure to encode height.
+                </p>
+                <span style="font-weight: bold; font-size: 20">Channels:</span>
+                <p>
+                    The chart uses poition channels. The x poition records the country while the y position records average male height.
+                </p>
+            </div>
+            <div class = "column column-50">
+                <p id = "audience">
+                    <span style="font-weight: bold; font-size: 20">Audience</span> <br> <br>
+                    The audience of this visualization is people who study demography, as well as people who are interested in learning and 
+                    comparing population statistics across different countries. It is also intended for the general public as it has a 
+                    playful and eye-catching design and displays a fun and approachable topic. 
+                </p>
+                <p id = "data">
+                    <span style="font-weight: bold">What data is encoded in the visualization?</span> <br> <br>
+                    The visualzation encodes the average male height in meters from several countries.  <br> <br>
+                    
+                    This visualization is a variation bar chart: it replaces the bars with cartoon figures to make the chart 
+                    more visually intersting, attracting the audience's attention. When viewing this chart, individuals are intended to 
+                    compare average male height from 6 different countries around the world. Individuals can identify which countries 
+                    have the tallest average male height and shortest average male height.
+                </p>
+                <p id = "bad-viz">
+                    <span style="font-weight: bold">What makes this visualization bad?</span> <br> <br>
+                    This visualization is bad because it is <b><em>untruthful</em></b>. When viewing this chart, individuals are led to 
+                    belive that men from India and the Phillipines are significantly smaller than men from North America and Europe. 
+                    The message is deceitful because in the graph the y-axis (heights) only range from 1.85 to 1.6. This limitted scale 
+                    exagerates what would otherwise be more minor height differences by setting the y-axis baseline at 1.5m instead of 0m. 
+                    Visually, this chart does not make sense because each figure is standing on the ground which assumes a baseline of 0. 
+                    Therefore, not only is the chart confusing because it features figures standing on the ground (0m baseline) while the 
+                    y-axis starts at 1.5m, but the chart also intentionally makes the Indian and Filipino figures much smaller and shorter, 
+                    which misleads the audience.  
+                </p>
+                <p id = "viz-link">
+                    <a href="https://drive.google.com/file/d/13Bu_6kQ8s7rfkdvI5F8utNCGcVDXMqSe/view">
+                        Find this visulation here
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "column">
+                <button type="button" class="collapsible">Our First Redesign</button>
+                <div class = "content">
+                    <img src="redesigns/height_redesign1.png">
+                    <span style="font-weight: bold; font-size: 20">Marks:</span>
+                    <p>
+                        This redesign uses the cartoon figure to encode the average male height.
+                    </p>
+                    <span style="font-weight: bold; font-size: 20">Channels:</span>
+                    <p>
+                        The redesign uses poition channels. The x poition records the country while the y position records 
+                        average male height.
+                    </p>
+                    <p>
+                        We think that this is the best redesign. The primary difference between this visualization and the original 
+                        is that our redesign sets 0 as the baseline for the y-axis. This scaling makes the redesign is more 
+                        <b><em>truthful</em></b> since it more accurately displays differences in height. The redesign keeps the most 
+                        interesting feature of the original visualization, which is the use of cartoon figures, but it displays the data 
+                        in a way that allows viewers to draw meaningful conclusions.
+
+                    </p>
+                </div>
+            </div>
+            <div class = "column">
+                <button type="button" class="collapsible">Our Second Redesign</button>
+                <div class = "content">
+                    <img src="redesigns/height_redesign2.png">
+                    <span style="font-weight: bold; font-size: 20">Marks:</span>
+                    <p>
+                        This redesign uses the rectangle mark to encode the average male height.
+                    </p>
+                    <span style="font-weight: bold; font-size: 20">Channels:</span>
+                    <p>
+                        The redesign uses poition channels. The x poition records the country while the y position records 
+                        average male height.
+                    </p>
+                    <p>
+                        This redesign is similar to the first redesign except it rectangles to encode the height instead of cartoon
+                        characters. Like the first redesign, this chart uses a baseline of 0 to more acurately depict differences in 
+                        height. Unlike the first chart, this redesign eliminates the cartoon characters. Although the elimination of 
+                        the cartoons makes chart simpler, it does eliminate some of the context the cartoon figures provide (looking
+                        at the first chart the viewer can quickly conclude that we are comparing male height). Most importantly this 
+                        redesign (like the first redesign) is <b><em>truthful</em></b>, accurately displaying the data.
+
+                    </p>
+                </div>
+            </div>
+            <div class = "column">
+                <button type="button" class="collapsible">Our Third Redesign</button>
+                <div class = "content">
+                    <img src="redesigns/height_redesign3.png">
+                    <span style="font-weight: bold; font-size: 20">Marks:</span>
+                    <p>
+                        This redesign uses the point and line marks to encode the average male height and height trends across countries.
+                    </p>
+                    <span style="font-weight: bold; font-size: 20">Channels:</span>
+                    <p>
+                        The redesign uses poition channels. The x poition records the country while the y position records 
+                        average male height.
+                    </p>
+                    <p>
+                        Once again, this visualization redesign is more <b><em>truthful</em></b> to the underlying data since it uses 
+                        a 0 baseline on the y-axis. The trend line on this graph allows users to see trends in height across country 
+                        and allows the viewers to quickly recognize that height is decreasing from country to country. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Bad Visualization 3-->
+        <div class = "row">
+            <div class = "column column-50">
+                <h2><b>Top 10 Movies by Worldwide Grosses</b></h2> <br>
+                <img src="img/bad_movies.png" alt="bad_height"> 
+                <span style="font-weight: bold; font-size: 20">Marks:</span>
+                <p>
+                    This visualization uses area as a mark to encode money grossed by each movie.
+                </p>
+                <span style="font-weight: bold; font-size: 20">Channels:</span>
+                <p>
+                    The chart uses size and color as visual channels. Different colors are used to represent the different movies, 
+                    and the size corresponds to the total amount grossed by that movie. Additionally, the chart uses poition channels. 
+                    The x poition records the year while the y position records movie production cost.
+
+                </p>
+            </div>
+            <div class = "column column-50">
+                <p id = "audience">
+                    <span style="font-weight: bold; font-size: 20">Audience</span> <br> <br>
+                    The intended audience for this visualization is the general public, but might appeal to those who are interested 
+                    in film and the film industry and want to learn more about which movies grossed the most money.
+                </p>
+                <p id = "data">
+                    <span style="font-weight: bold">What data is encoded in the visualization?</span> <br> <br>
+                    The visualization encodes the total amount grossed by specific movies against the total production budget. <br> <br>
+                    
+                    The viewer is able to differentiate between the different amounts each movie grossed and compare that with the 
+                    total production of each movie as well. The viewer is also able to observe the relationship between total amount 
+                    grossed, and total production budget. 
+                </p>
+                <p id = "bad-viz">
+                    <span style="font-weight: bold">What makes this visualization bad?</span> <br> <br>
+                    This visualization is bad because the size of the bubbles is misleading. The difference between the values is not 
+                    proportional to the difference in size between the bubbles. It also is somewhat difficult to see where on the circle 
+                    lines up with the y axis, so the value of the production budget is not obvious to the viewer. One might assume that 
+                    the center of the circle is where the value of the production budget is, but this is not explicitly stated to the 
+                    viewer. Using bubbles to represent this data does not appear to be the most effective way to demonstrate the 
+                    relationship between production budget and total gross for different movies. For these reasons, this visualization is 
+                    not <b><em>truthful</em></b> because it is misleading and it is not <b><em>functional</em></b> because it is built in 
+                    a way that makes it difficult for the viewer to make conclusions and compare values in a meaningful way. 
+                </p>
+                <p id = "viz-link">
+                    <a href="https://rigorousthemes.com/blog/misleading-data-visualization-examples/">
+                        Find this visulation here
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "column">
+                <button type="button" class="collapsible">Our First Redesign</button>
+                <div class = "content">
+                    <img src="redesigns/movies_redesign1.png">
+                    <span style="font-weight: bold; font-size: 20">Marks:</span>
+                    <p>
+                        This visualization uses area as a mark to encode money grossed by each movie.
+                    </p>
+                    <span style="font-weight: bold; font-size: 20">Channels:</span>
+                    <p>
+                        The chart uses size and color as visual channels. Different colors are used to represent the different movies, 
+                        and the size corresponds to the total amount grossed by that movie. This chart also uses line channels to 
+                        draw the readers eye over to the corresponding y-axis value. Additionally, the chart uses poition channels. 
+                        The x poition records the year while the y position records movie production cost.
+                    </p>
+                    <p>
+                        This redesign slightly improves on the original design because it changes the bubble sizes so they are less exagerated than the 
+                        orignal graphic. This scaling change makes the new chart more <b><em>truthful</em></b> to the underlying data. Additionally, reference
+                        lines on this chart allow the viewer to more easily recognize the budget production for each movie. These reference lines add to the 
+                        <b><em>functionality</em></b> of the visualizaiton.
+                    </p>
+                </div>
+            </div>
+            <div class = "column">
+                <button type="button" class="collapsible">Our Second Redesign</button>
+                <div class = "content">
+                    <img src="redesigns/movies_redesign2.png">
+                    <span style="font-weight: bold; font-size: 20">Marks:</span>
+                    <p>
+                        This visualization uses the point mark to encode each movie. 
+                    </p>
+                    <span style="font-weight: bold; font-size: 20">Channels:</span>
+                    <p>
+                        This chart uses the color channel to encode each movie. This chart also uses the position channel. Total amount grossed in billions
+                        is recorded on the x-axis and production budget in millions is recorded on the y-axis. 
+                    </p>
+                    <p>
+                        We believe this redesign is the best redesign because it allows viewers to make comparisons between production cost and the amount of money
+                        each movie grossed. Because the data compares two quantitative values it makes sense to display the information in a scatter plot. This 
+                        design also helps viewers easily identify the outlier (Titanic) in top grossing movies. The interactive tooltip also allows viewers to expand
+                        the data and view it with more detail. In general, this redesign makes the data quickly understandable adding to its <b><em>functionality</em></b>.
+                    </p>
+                </div>
+            </div>
+            <div class = "column">
+                <button type="button" class="collapsible">Our Third Redesign</button>
+                <div class = "content">
+                    <img src="redesigns/movies_redesign3.png">
+                    <span style="font-weight: bold; font-size: 20">Marks:</span>
+                    <p>
+                        This visualization uses the rectangle mark to encode each movie. 
+                    </p>
+                    <span style="font-weight: bold; font-size: 20">Channels:</span>
+                    <p>
+                        This chart uses the color channel to highlight a selected movie. This chart also uses the position channel. Total amount grossed in billions
+                        is recorded on the y-axis and movie is recorded on the x-axis. 
+                    </p>
+                    <p>
+                        This redesign focuses more heavily on the total amount grossed by each movie as that is the subject of the chart. Like the scatterplot the bar
+                        chart layout allows viewers to recognize the outlier in the data and make comparisons between the highest grossing movie and the lowest grossing
+                        movie in this list. Most of the details are hidden in the tooltip which the user can interact with to reveal information about production budget, 
+                        amount grossed, and the year the movie was released. Although these new features make the new visualizaiton more <b><em>functional</em></b> 
+                        viewers are not as easily able to make comparisons between production cost and total amount grossed at first glance. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class = "container" id = "footnote">
+        <h5><b>Authors: Rita LaPlante, Kelly Burke, Amy Zhao</b></h5>
+        Styling derived from <a href="https://milligram.io/">Milligram</a>
+    </div>
 </body>

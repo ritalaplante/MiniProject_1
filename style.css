@@ -14,6 +14,12 @@ body {
 	background-color: #F7F7F7;
 }
 
+#footnote{
+    font-size: 16px; 
+	padding: 30px 30px;
+	background-color: #F7F7F7;
+}
+
 #good-content {
     padding: 30px 30px;
 }
@@ -26,6 +32,25 @@ img {
     padding: 15px 15px;
 }
 
+.collapsible {
+    background-color: #F7F7F7;
+    color: #606c76;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    border-radius: 0;
+  }
 
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
 
+.content {
+    display: none;
+    overflow: hidden;
+    
+}
 
